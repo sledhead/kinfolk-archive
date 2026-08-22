@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F9F7F2;
+    color: #2D2D2D;
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-editorial-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-quote {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+/* Editorial styling details */
+.editorial-bracket {
+  position: relative;
+}
+
+.editorial-bracket::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+  border-top: 2px solid #8C7851;
+  border-left: 2px solid #8C7851;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1EDE4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5CEC2;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8C7851;
+}
+
+/* Photo card vintage polaroid aesthetic */
+.polaroid-frame {
+  box-shadow: 0 10px 25px -5px rgba(45, 45, 45, 0.08), 0 8px 10px -6px rgba(45, 45, 45, 0.04);
+}
+
+.vintage-sepia-hover:hover img {
+  filter: contrast(1.05) saturate(1.1);
+}
+
