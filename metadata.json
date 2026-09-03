@@ -1,6 +1,6 @@
 {
-  "name": "Kinfolk Archive - Family Photos & Story Timeline",
-  "description": "An interactive family photo album and memory archive with timeline navigation, multi-filter search by year, member, and location, and rich storytelling for family events past and present.",
+  "name": "The Klempel Chronicle",
+  "description": "An interactive family photo album and memory archive for the Klempel family with timeline navigation, multi-filter search by year, member, and location, and rich storytelling for family events past and present.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
