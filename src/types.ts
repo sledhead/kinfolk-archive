@@ -12,7 +12,7 @@ export interface FamilyMemory {
   story: string;
   date: string; // YYYY-MM-DD or readable
   year: number;
-  decade: string; // "1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"
+  decade: string; // "1940s", "1950s", "1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"
   location: string;
   coordinates?: { lat: number; lng: number };
   imageUrl: string;

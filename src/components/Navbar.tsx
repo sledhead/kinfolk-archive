@@ -65,10 +65,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               </p>
               <div className="flex items-center space-x-2.5">
                 <span className="font-serif text-2xl sm:text-3xl font-light tracking-tighter text-[#2D2D2D]">
-                  The Kinship Chronicle
+                  The Klempel Chronicle
                 </span>
                 <span className="hidden sm:inline-block text-[10px] font-sans tracking-widest uppercase px-2 py-0.5 rounded-full bg-[#2D2D2D]/5 text-[#8C7851] border border-[#8C7851]/30 font-semibold">
-                  1968 — 2024
+                  1948 — 2024
                 </span>
               </div>
             </div>
