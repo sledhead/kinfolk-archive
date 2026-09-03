@@ -28,8 +28,8 @@ import { ExportImportModal } from './components/ExportImportModal';
 import { soundFx } from './utils/sound';
 import { Sparkles, Heart, Filter, X } from 'lucide-react';
 
-const STORAGE_KEY_MEMORIES = 'kinfolk_family_memories_v1';
-const STORAGE_KEY_MEMBERS = 'kinfolk_family_members_v1';
+const STORAGE_KEY_MEMORIES = 'klempel_family_memories_v2';
+const STORAGE_KEY_MEMBERS = 'klempel_family_members_v2';
 
 export default function App() {
   // 1. Core State Persistence
@@ -398,9 +398,9 @@ export default function App() {
       <footer className="mt-auto border-t border-[#2D2D2D]/10 bg-[#F1EDE4] py-8 px-4 sm:px-6 font-sans">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#2D2D2D]/60">
           <div className="flex items-center space-x-2">
-            <span className="font-serif text-base font-light italic text-[#2D2D2D]">Kinfolk Archive</span>
+            <span className="font-serif text-base font-light italic text-[#2D2D2D]">The Klempel Chronicle</span>
             <span>•</span>
-            <span className="text-[11px] uppercase tracking-wider">Family Chronicle & Story Archive (1968 – Present)</span>
+            <span className="text-[11px] uppercase tracking-wider">Family Chronicle & Story Archive (1940s – Present)</span>
           </div>
 
           <div className="flex items-center space-x-4">

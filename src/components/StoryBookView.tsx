@@ -292,7 +292,7 @@ export const StoryBookView: React.FC<StoryBookViewProps> = ({
               </button>
 
               <span className="text-[11px] text-[#2D2D2D]/50 italic font-serif">
-                Preserved in Kinfolk Archive
+                Preserved in The Klempel Chronicle
               </span>
             </div>
 

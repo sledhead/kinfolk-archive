@@ -280,7 +280,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 }}
                 className="w-full px-3 py-2 bg-[#F1EDE4] rounded-xl border border-[#2D2D2D]/10 text-xs text-[#2D2D2D] focus:outline-none focus:ring-1 focus:ring-[#8C7851]"
               >
-                <option value="all">All Years (1968 – 2024)</option>
+                <option value="all">All Years ({years[0] || 1948} – {years[years.length - 1] || 2024})</option>
                 <optgroup label="Decades">
                   {decades.map(dec => (
                     <option key={`dec-${dec}`} value={`decade:${dec}`}>Entire {dec}</option>
@@ -346,8 +346,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 onChange={(e) => setFilterState(prev => ({ ...prev, sortBy: e.target.value as FilterState['sortBy'] }))}
                 className="w-full px-3 py-2 bg-[#F1EDE4] rounded-xl border border-[#2D2D2D]/10 text-xs text-[#2D2D2D] focus:outline-none focus:ring-1 focus:ring-[#8C7851]"
               >
-                <option value="year-asc">Chronological (Oldest First: 1968 → 2024)</option>
-                <option value="year-desc">Reverse Chronological (Newest First: 2024 → 1968)</option>
+                <option value="year-asc">Chronological (Oldest First: {years[0] || 1948} → {years[years.length - 1] || 2024})</option>
+                <option value="year-desc">Reverse Chronological (Newest First: {years[years.length - 1] || 2024} → {years[0] || 1948})</option>
                 <option value="title">Event Title (A → Z)</option>
               </select>
             </div>

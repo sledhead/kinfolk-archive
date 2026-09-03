@@ -33,7 +33,7 @@ export const ExportImportModal: React.FC<ExportImportModalProps> = ({
 
   const handleExport = () => {
     const data = {
-      archiveName: 'Kinfolk Family Archive',
+      archiveName: 'The Klempel Chronicle',
       exportDate: new Date().toISOString(),
       familyMembers,
       memories,
@@ -42,7 +42,7 @@ export const ExportImportModal: React.FC<ExportImportModalProps> = ({
     const jsonString = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(data, null, 2))}`;
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute('href', jsonString);
-    downloadAnchor.setAttribute('download', `kinfolk-family-archive-${new Date().getFullYear()}.json`);
+    downloadAnchor.setAttribute('download', `klempel-family-archive-${new Date().getFullYear()}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
@@ -166,7 +166,7 @@ export const ExportImportModal: React.FC<ExportImportModalProps> = ({
                 <span>Reset to Default Collection</span>
               </h4>
               <p className="text-xs text-[#2D2D2D]/60">
-                Restore the default 16 historical family event memories (1968–2024).
+                Restore the default 18 historical family event memories (1940s–2024).
               </p>
             </div>
             <button
